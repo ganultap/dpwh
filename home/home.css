@@ -1,0 +1,88 @@
+.container {
+    max-width: 80%;
+    flex: 1;
+    max-height: 100%;
+}
+
+.card {
+    width: 300px; /* Set the desired width */
+    height: 340px; /* Set the desired height */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin:auto;
+    display: flex;
+}
+
+
+.welcome-message {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.nav-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.card-link:hover {
+    color: #e44d26;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.zoom {
+    transition: transform 0.6s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.zoom:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.logo img {
+    transition: transform 0.6s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.btn-orange{
+    background-color: orange;
+}
+.btn-orange:hover{
+    background-color: blue;
+}
+footer {
+    width: 100%;
+    background-color: #343a40;
+    /* Dark background color for the footer */
+    color: #ffffff;
+    /* Text color for the footer */
+    box-sizing: border-box; /* Include padding in width */
+    flex-shrink: 0; /* Don't allow the footer to shrink */
+}
+.card .card-header {
+    background-color: #fc6b03;
+    color: white;
+}

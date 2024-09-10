@@ -1,0 +1,15 @@
+// Define variables for tooltip colors
+$tooltip-bg-color: var(--bd-violet-bg);
+$tooltip-text-color: var(--bs-white);
+
+// Define styles for the custom tooltip
+.custom-tooltip {
+  .tooltip {
+    background-color: $tooltip-bg-color; // Set background color
+    color: $tooltip-text-color; // Set text color
+
+    & .tooltip-arrow {
+      border-bottom-color: $tooltip-bg-color; // Set arrow color to match background
+    }
+  }
+}

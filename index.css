@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* background: linear-gradient(to right, rgba(247, 89, 41, 0.5), rgba(2, 5, 185, 0.5)); */
+    background-color: #0006b1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.6s ease-in-out; /* Added fade-in animation */
+}
+    @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    .card {
+        max-width: 400px;
+        width: 100%;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Added box shadow */
+    }
+
+    .card-header h2 {
+        margin: 0;
+        color: #333;
+    }
+
+    .card-body {
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* Add these styles in the <style> section or your external style.css file */
+    @keyframes checkAnimation {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .alert-success {
+        animation: checkAnimation 0.5s ease-out;
+    }
+
+    @keyframes xAnimation {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    .alert-danger {
+        animation: xAnimation 0.5s ease-out;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #343a40;
+        /* Dark background color for the footer */
+        color: #ffffff;
+        /* Text color for the footer */
+        /* Padding for the footer content */
+    }

@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #05014a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.form-floating{
+    border-radius: 20px;
+}
+
+.no-padding {
+    padding: 0;
+   
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    padding-top: 0;
+    /* Remove padding-top */
+    flex: 1;
+    height: auto;
+    /* Height will adjust according to content */
+    padding: 0 15px; /* Added padding on the sides for small screens */
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h4 {
+    text-align: center;
+    color: #333;
+}
+
+.search-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-input {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.search-button {
+    border-radius: 0 5px 5px 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.btn-dp-orange {
+    background-color: #fc6b03;
+    color: white;
+}
+
+.dp-orange {
+    background-color: #fc6b03;
+    color: white;
+}
+
+.btn-dp-blue {
+    background-color: #003da5;
+    color: white;
+}
+
+.btn-dp-orange:hover{
+    background-color: #05014a;
+    color: white;
+}
+
+.fixed-height-img {
+    width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper spacing around the image */
+}
+.card-img-container {
+    height: 250px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.dp-blue {
+    background-color: #003da5;
+    color: white;
+}
+
+.card-body {
+    padding: 15px; /* Added padding to the card body */
+}
+
+.card {
+    margin-bottom: 20px; /* Added margin bottom to create space between cards */
+    
+}
+.row.news-row {
+    min-height: 400px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any overflow */
+}
+
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .container {
+        padding: 0; /* Reset padding for larger screens */
+    }
+
+    .card {
+        flex-basis: 30%; /* Adjust card width for larger screens */
+        margin-right: 2%; /* Add margin between cards */
+    }
+
+    .card:last-child {
+        margin-right: 0; /* Remove margin from the last card in a row */
+    }
+}
